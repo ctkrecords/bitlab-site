@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700);
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.header{
+    background-image: url('../images/banner.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat; 
+    min-height: 100vh;
+}
+.header .navbar{
+    /*background-color: transparent !important;*/
+    padding-bottom: 1.15rem;
+}
+.logo{
+    height: 1.5rem !important;
+    display: block;
+}
+
+.container.navbar{
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding-top: 1.5rem;*/
+}
+a.nav-link{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+a.nav-link:hover{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #89f5ff;
+    padding-bottom: 1.15rem;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: none;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='5' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.container.digital_skills{
+    max-width: 89%;
+    padding-top: 7.5rem;
+}
+
+.btn-encuentra{
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-top: 0.60rem !important;
+    padding-bottom: 0.60rem !important;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.btn-encuentra:hover{
+    background-color: white;
+    color: rgb(46, 46, 46);
+}
+.h2-aprende{
+    font-size: 2.25rem !important;
+    font-weight: 700;
+    color: black;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;
+}
+
+.text-purple{
+    color: #481ae7;
+}
+
+.card{
+    border: none;
+}
+
+.card:hover{
+    /*box-shadow: 0.5px 5px 8px #666;*/
+    box-shadow: 0px 6px 8px rgba(189, 189, 189, 0.5);
+}
+
+.gris{
+    background-color: rgb(235, 235, 235);
+    width: 100%
+}
+
+.navbar.fixed-top.scrolled {
+  background-color: #FFF !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar.fixed-top.scrolled a.nav-link {
+  color: black !important;
+}
+
+.navbar.fixed-top.scrolled img.logo-morado{
+    display: block !important;
+}
+
+.navbar.fixed-top.scrolled img.logo-white{
+    display: none !important;
+}
+.text-aprender{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+.card-learn{
+    height: 108px;
+}
+.card-p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875rem;
+}
+.h4-card{
+    font-weight: 600;
+}
+.btn-cursos-free{
+    border: 1.5px solid #481AE7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #481AE7;
+}
+.btn-cursos-free:hover{
+    background: #481AE7;
+    border-radius: 4px;
+    color: #FFFFFF;
+}   
+
+.card-cursos-free{
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.card-cursos-free:hover{
+    border: 1px solid #481AE7;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+.div-gris{
+    background-color: #F7F7F7;
+}
+#main-image{
+    display: block;
+}
+#design-image{
+    display: none;
+}
+#software-dev:hover + #main-image{
+    display: none;
+}
+#estrategia-dig:hover + #design-image{
+    display: block;
+}
+.h2-noticias{
+    font-size: 1.875rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
