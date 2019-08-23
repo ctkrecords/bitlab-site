@@ -11,7 +11,18 @@ body{
     background-repeat:  no-repeat; 
     min-height: 100vh;
 }
+.header-partners{
+    background-image: url('../images/banner-partners.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat; 
+    min-height: 100vh;
+}
 .header .navbar{
+    /*background-color: transparent !important;*/
+    padding-bottom: 1.15rem;
+}
+.header-partners .navbar{
     /*background-color: transparent !important;*/
     padding-bottom: 1.15rem;
 }
