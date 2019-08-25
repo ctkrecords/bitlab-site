@@ -190,3 +190,23 @@ p{
 .cursos-header{
     border: 1px solid #DFDFDF;
 }
+a.nav-courses{
+    color: #1E1E1E;
+    font-weight: 500;
+}
+a.nav-courses:hover{
+    color: #1E1E1E;
+    font-weight: 900;
+}
+a.a-courses{
+    text-decoration: none;
+    color: black;
+}
+a.a-courses:hover{
+    color: #481AE7;
+    font-weight: bold;
+}
+a.a-courses:focus{
+    color: #481AE7;
+    font-weight: bold;
+}
