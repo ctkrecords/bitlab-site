@@ -45,12 +45,12 @@
             <div class="row"> 
                 <div class="col-3">
                     <div class="container">
-                        <a class="card-p a-courses" href="#">Desarrollo de software</a>
+                        <button class="card-p a-courses" onclick="cursos_desarrollo()">Desarrollo de software</button>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="container">
-                        <a class="card-p a-courses" href="#">Estrategia digital</a>
+                        <button class="card-p a-courses">Estrategia digital</button>
                     </div>
                 </div>
                 <div class="col-3">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-3">
                     <div class="container">
-                        <a class="card-p a-courses" href="#">Emprendimiento</a>
+                        <button class="card-p a-courses" onclick="cursos_emprendimiento()">Emprendimiento</button>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                 </div>         
             </div>
             <div class="row pt-5">
-                <div class="col-6">
+                <div class="col-6" id="curso_estrategia">
                     <div class="card card-cursos-free mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-4 d-flex justify-content-start">
@@ -116,7 +116,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="col-6">
+                <div class="col-6" id="curso_desarrollo">
                     <div class="card card-cursos-free mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-4 d-flex justify-content-start">
@@ -141,57 +141,107 @@
                             </div>
                         </div> 
                     </div>
-                        <div class="col-6">
-                            <div class="card card-cursos-free mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-4 d-flex justify-content-start">
-                                        <img src="images/img_course_emprendimiento.jpg" class="card-img" alt="Loading...">
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Introducción al emprendimiento</h3>
-                                            <p class="card-p"><strong>Carlos Moreno</strong></p>
-                                            <p class="card-text card-p" style="text-align: justify">Descubre el camino para emprender en El Salvador desde construir tu modelo de negocio, herramientas, aliados y opciones de fondeo hasta cómo preparar un Pitch Deck.</p>
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <h4 class="h4-card">4 horas</h4>
-                                                </div>
-                                                <div class="col-6">
-                                                    <button class="btn btn-cursos-free card-p">Inscríbete ahora</button>
-                                                </div>   
+                    <div class="col-6" id="curso_emprendimiento">
+                        <div class="card card-cursos-free mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-start">
+                                    <img src="images/img_course_emprendimiento.jpg" class="card-img" alt="Loading...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al emprendimiento</h3>
+                                        <p class="card-p"><strong>Carlos Moreno</strong></p>
+                                        <p class="card-text card-p" style="text-align: justify">Descubre el camino para emprender en El Salvador desde construir tu modelo de negocio, herramientas, aliados y opciones de fondeo hasta cómo preparar un Pitch Deck.</p>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="h4-card">4 horas</h4>
                                             </div>
+                                            <div class="col-6">
+                                                <button class="btn btn-cursos-free card-p">Inscríbete ahora</button>
+                                            </div>   
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
-                        </div>
-                        <div class="col-6">
-                            <div class="card card-cursos-free mb-3" style="max-width: 540px;">
-                                <div class="row no-gutters">
-                                    <div class="col-4 d-flex justify-content-start">
-                                        <img src="images/img_course_ux.jpg" class="card-img" alt="Loading...">
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Introducción al UX & UI</h3>
-                                            <p class="card-p"><strong>Luis Pinto</strong></p>
-                                            <p class="card-text card-p" style="text-align: justify">Conoceras la diferencia entre la Experiencia de Usuario y la interfaz de Usuario, entenderas el significado de cada uno, y aprenderas procesos y tips que te ayudaran a lograr un buen producto digital.</p>
-                                            <hr>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <h4 class="h4-card">4 horas</h4>
-                                                </div>
-                                                <div class="col-6">
-                                                    <button class="btn btn-cursos-free card-p">Inscríbete ahora</button>
-                                                </div>   
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
+                            </div>
+                        </div> 
                     </div>
+                    <div class="col-6" id="curso_design">
+                        <div class="card card-cursos-free mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-start">
+                                    <img src="images/img_course_ux.jpg" class="card-img" alt="Loading...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al UX & UI</h3>
+                                        <p class="card-p"><strong>Luis Pinto</strong></p>
+                                        <p class="card-text card-p" style="text-align: justify">Conoceras la diferencia entre la Experiencia de Usuario y la interfaz de Usuario, entenderas el significado de cada uno, y aprenderas procesos y tips que te ayudaran a lograr un buen producto digital.</p>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="h4-card">4 horas</h4>
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="btn btn-cursos-free card-p">Inscríbete ahora</button>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-6" id="curso_emprendimiento_pay">
+                        <div class="card card-cursos-free mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-start">
+                                    <img src="images/img_course.jpg" class="card-img" alt="Loading...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al emprendimiento</h3>
+                                        <p class="card-p"><strong>Carlos Moreno</strong></p>
+                                        <p class="card-text card-p" style="text-align: justify">Descubre el camino para emprender en El Salvador desde construir tu modelo de negocio, herramientas, aliados y opciones de fondeo hasta cómo preparar un Pitch Deck.</p>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="h4-card">4 horas</h4>
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="btn btn-cursos-free card-p">Inscríbete ahora</button>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-6" id="curso_design_pay">
+                        <div class="card card-cursos-free mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-4 d-flex justify-content-start">
+                                    <img src="images/img_course2.jpg" class="card-img" alt="Loading...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Introducción al UX & UI</h3>
+                                        <p class="card-p"><strong>Luis Pinto</strong></p>
+                                        <p class="card-text card-p" style="text-align: justify">Conoceras la diferencia entre la Experiencia de Usuario y la interfaz de Usuario, entenderas el significado de cada uno, y aprenderas procesos y tips que te ayudaran a lograr un buen producto digital.</p>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h4 class="h4-card">4 horas</h4>
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="btn btn-cursos-free card-p">Inscríbete ahora</button>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
         </div>
     </div>
 

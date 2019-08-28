@@ -198,15 +198,17 @@ a.nav-courses:hover{
     color: #1E1E1E;
     font-weight: 900;
 }
-a.a-courses{
+button.a-courses{
     text-decoration: none;
     color: black;
+    background: none;
+    border: 0;
 }
-a.a-courses:hover{
+button.a-courses:hover{
     color: #481AE7;
     font-weight: bold;
 }
-a.a-courses:focus{
+button.a-courses:focus{
     color: #481AE7;
     font-weight: bold;
 }
