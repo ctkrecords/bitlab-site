@@ -7,6 +7,7 @@ $(function () {
 
 
 function cursos_desarrollo(){
+	console.log("click");
 	var cde = document.getElementById("curso_desarrollo").style.display;
 	var ce = document.getElementById("curso_estrategia").style.display;
 	var cd = document.getElementById("curso_design").style.display;
