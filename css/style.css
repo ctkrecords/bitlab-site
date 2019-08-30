@@ -51,7 +51,8 @@ a.nav-link:hover{
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-bottom-color: #89f5ff;
-    padding-bottom: 1.15rem;
+    padding-bottom: 0rem;
+    /*padding-bottom: 1.15rem;*/
 }
 
 .custom-toggler.navbar-toggler {
